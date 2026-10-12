@@ -1,4 +1,4 @@
-import { FilmyzillaScraper } from "./scraper";
+import { FilmyzillaScraper } from './scraper';
 
 const [maxCategories, maxMovies] = process.argv.slice(2).map(Number);
 

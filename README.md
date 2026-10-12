@@ -61,3 +61,8 @@ Data is saved to `output/filmyzilla_data.json`:
 - Two-step download URL extraction
 - Error handling and retry logic
 - Rate limiting
+
+## License
+
+Licensed under the [HackerX License](./LICENSE). Redistributions must retain copyright,
+license text, and [NOTICE](./NOTICE) attribution per the license terms.
