@@ -13,6 +13,7 @@ output/
 !package.json
 !package-lock.json
 !tsconfig.json
+!.prettierrc.json
 
 # Logs
 *.log
