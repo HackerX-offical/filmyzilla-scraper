@@ -2,8 +2,8 @@
 
 ## Purpose
 
-CLI scraper: fetches HTML, parses listings, writes JSON. Non-goals: bypassing paywalls
-or distributing copyrighted media.
+CLI scraper: fetches HTML, parses listings, writes JSON. Non-goals: bypassing paywalls or
+distributing copyrighted media.
 
 ## High-level flow
 
@@ -32,8 +32,7 @@ flowchart LR
 ## Testing strategy
 
 - **Unit**: mocked I/O, pure parsers, reporters.
-- **Integration** (if present): live targets documented in README; optional in CI or
-  scheduled.
+- **Integration** (if present): live targets documented in README; optional in CI or scheduled.
 
 ## Ethics & scope
 
