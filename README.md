@@ -62,6 +62,10 @@ Data is saved to `output/filmyzilla_data.json`:
 - Error handling and retry logic
 - Rate limiting
 
+## Ethics
+
+Use only on systems and content you are **authorized** to access. See [SECURITY.md](./SECURITY.md).
+
 ## License
 
 Licensed under the [HackerX License](./LICENSE). Redistributions must retain copyright,
