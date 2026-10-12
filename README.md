@@ -1,70 +1,52 @@
-# Filmyzilla Scraper
+# filmyzilla-scraper
 
-Web scraper for Filmyzilla that extracts movie data and download links.
+Resumable TypeScript scraper for Filmyzilla category and movie listings.
 
-## Installation
+## Why this exists
+
+Media index sites change markup often; this scraper captures listing metadata to JSON
+for authorized research and archival workflows.
+
+## Features
+
+- Cheerio-based HTML parsing with year/URL helpers
+- Checkpoint-friendly JSON output
+- Jest unit tests on URL utilities
+
+## Install
 
 ```bash
+git clone https://github.com/HackerX-offical/filmyzilla-scraper.git
+cd filmyzilla-scraper
 npm install
 ```
 
-## Usage
+## Quick start
 
 ```bash
-# Scrape all categories and movies
 npm start
-
-# Scrape specific number of categories and movies
-npm start 5 20
-
-# Test with 1 category, 2 movies
-npm run test
 ```
 
 ## Output
 
-Data is saved to `output/filmyzilla_data.json`:
+JSON files under the configured output directory with movie titles, links, and scrape
+metadata.
 
-```json
-{
-  "totalMovies": 100,
-  "totalCategories": 10,
-  "totalLinks": 400,
-  "categories": ["bollywood", "hollywood", "..."],
-  "movies": [
-    {
-      "id": "21017",
-      "title": "Movie Name (2025)",
-      "url": "https://...",
-      "thumbnail": "https://...",
-      "category": "bollywood",
-      "year": "2025",
-      "description": "...",
-      "links": [
-        {
-          "quality": "1080p",
-          "format": "mkv",
-          "size": "2.38 GB",
-          "serverUrl": "https://...",
-          "downloadUrl": "https://..."
-        }
-      ]
-    }
-  ]
-}
+## Develop
+
+```bash
+npm test
+npm run format:check
 ```
 
-## Features
+## Architecture
 
-- Automatic category discovery
-- Progress saving and resume capability
-- Two-step download URL extraction
-- Error handling and retry logic
-- Rate limiting
+See [ARCHITECTURE.md](./ARCHITECTURE.md) for module layout and extension points.
 
 ## Ethics
 
-Use only on systems and content you are **authorized** to access. See [SECURITY.md](./SECURITY.md).
+Use only on systems and content you are **authorized** to test. See
+[SECURITY.md](./SECURITY.md).
 
 ## License
 
