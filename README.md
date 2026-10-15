@@ -16,7 +16,7 @@ research and archival workflows.
 ## Install
 
 ```bash
-git clone https://github.com/HackerX-offical/filmyzilla-scraper.git
+git clone https://github.com/HackerX-official/filmyzilla-scraper.git
 cd filmyzilla-scraper
 npm install
 ```
